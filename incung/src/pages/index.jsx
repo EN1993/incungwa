@@ -6,7 +6,7 @@ import HomeMain from "../pages/home-3";
 const index = () => {
   return (
     <>
-      <Seo pageTitle="Home-1" />
+      <Seo pageTitle="Home-3" />
       <HomeMain />
     </>
   );
