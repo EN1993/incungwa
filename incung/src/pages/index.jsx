@@ -1,6 +1,7 @@
 import dynamic from "next/dynamic";
 import Seo from "../components/common/seo";
-import HomeMain from "../components/home";
+import HomeMain from "../pages/home-3";
+// import HomeMain from "../components/home";
 
 const index = () => {
   return (

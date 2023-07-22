@@ -212,16 +212,16 @@ const HeaderMenuContent = ({ float = "" }) => {
     },
   ];
 
-  const blog = [
-    { id: 1, name: "Blog List 1", routerPath: "/blog-list-1" },
-    { id: 2, name: "Blog List 2", routerPath: "/blog-list-2" },
-    { id: 3, name: "Blog List 3", routerPath: "/blog-list-3" },
-    {
-      id: 4,
-      name: "Blog Details",
-      routerPath: "/blog-details",
-    },
-  ];
+  // const blog = [
+  //   { id: 1, name: "Blog List 1", routerPath: "/blog-list-1" },
+  //   { id: 2, name: "Blog List 2", routerPath: "/blog-list-2" },
+  //   { id: 3, name: "Blog List 3", routerPath: "/blog-list-3" },
+  //   {
+  //     id: 4,
+  //     name: "Blog Details",
+  //     routerPath: "/blog-details",
+  //   },
+  // ]; comment of 21.07.23
 
   const pages = [
     { id: 1, name: "About Us", routerPath: "/about-us" },
@@ -245,7 +245,7 @@ const HeaderMenuContent = ({ float = "" }) => {
     >
       <li className="dropitem">
         <a
-          href="#home-3"
+          href="#"
           // href="#"
           className={
             home.some((page) => page.routerPath === route.pathname)
@@ -275,7 +275,6 @@ const HeaderMenuContent = ({ float = "" }) => {
         </ul>
       </li>
       {/* End .dropitem */}
-
       <li className="dropitem">
         <a
           href="#"
@@ -329,7 +328,6 @@ const HeaderMenuContent = ({ float = "" }) => {
         </ul>
       </li>
       {/* End .dropitem */}
-
       <li className="dropitem">
         <a
           href="#"
@@ -389,7 +387,6 @@ const HeaderMenuContent = ({ float = "" }) => {
         </ul>
       </li>
       {/* End .dropitem */}
-
       <li className="dropitem">
         <a
           href="#"
@@ -419,8 +416,7 @@ const HeaderMenuContent = ({ float = "" }) => {
         </ul>
       </li>
       {/* End .dropitem */}
-
-      <li className="dropitem">
+      {/* <li className="dropitem">
         <a
           href="#"
           className={
@@ -454,9 +450,9 @@ const HeaderMenuContent = ({ float = "" }) => {
             </li>
           ))}
         </ul>
-      </li>
+      </li> */}
+      {/*comment of 21.07.23 */}
       {/* End .dropitem */}
-
       <li className="last">
         <Link href="/contact">
           <a
@@ -467,7 +463,6 @@ const HeaderMenuContent = ({ float = "" }) => {
         </Link>
       </li>
       {/* End .dropitem */}
-
       <li className={`list-inline-item list_s ${float}`}>
         <a
           href="#"
@@ -479,7 +474,6 @@ const HeaderMenuContent = ({ float = "" }) => {
         </a>
       </li>
       {/* End .dropitem */}
-
       <li className={`list-inline-item add_listing ${float}`}>
         <Link href="/create-listing">
           <a>
